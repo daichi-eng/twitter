@@ -14,7 +14,7 @@
           <li><a href="#">ホーム</a></li>
           <li><a href="#">問い合わせ</a></li>
           <li><a href="#">開発者について</a></li>
-          <li><a href="#">だいちのブログ</a></li>
+          <li><a href="#">ブログ</a></li>
         </ul>
       </nav>
     </div>
