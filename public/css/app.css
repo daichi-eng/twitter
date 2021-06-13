@@ -176,7 +176,7 @@ header style
 #top-head {
   width: 100%;
   height: 60px;
-  background: #fff;
+  background: #312d2a;
   opacity: 0.9;
   display: flex;
   position: fixed;
@@ -196,7 +196,7 @@ header style
 /*logo style*/
 
 .inner h1 a {
-  color: #20b2aa;
+  color: #f8f8f8;
   text-decoration: none;
   font-weight: bold;
 }
@@ -213,11 +213,11 @@ header style
 #top-head nav ul li a {
   text-decoration: none;
   padding: 16px;
-  color: #404040;
+  color: #f8f8f8;
 }
 
 #top-head nav ul li a:hover {
-  color: #20b2aa;
+  color: #55c4be;
 }
 
 #nav_toggle {

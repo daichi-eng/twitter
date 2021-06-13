@@ -1,11 +1,7 @@
 @extends('layouts.app')
 
-@section('active-panel')
-　
-@endsection
-
 @section('title')
-　Twitter　API
+  基本設定
 @endsection
 
 @section('content')
