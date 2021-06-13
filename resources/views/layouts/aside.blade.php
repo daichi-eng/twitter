@@ -20,7 +20,7 @@
 				Twitterの各情報を登録して初期設定を行ってください。
 			</p>
 	
-			<a class="btn btn-success m-2 " href="https://restarted.site/">設定</a>
+			<a class="btn btn-success m-2 " href="{{ route('setting.index') }}">設定</a>
 		</div>
 	</div><!-- card End -->
 

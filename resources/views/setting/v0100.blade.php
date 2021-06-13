@@ -27,24 +27,14 @@
                     <div class="card-header">
                         ツイート
                     </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><a href="" target="_blank">予約投稿</a></li>
-                      <li class="list-group-item"><a href="" target="_blank">Dapibus ac facilisis in</a></li>
-                      <li class="list-group-item"><a href="" target="_blank">Vestibulum at eros</a></li>
-                    </ul>
-                  </div>
+				</div>
             </div>
             <div class="col-sm-4">
                 <div class="card m-1">
                     <div class="card-header">
                         メンション機能
                     </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><a href="" target="_blank">予約投稿</a></li>
-                      <li class="list-group-item"><a href="" target="_blank">Dapibus ac facilisis in</a></li>
-                      <li class="list-group-item"><a href="" target="_blank">Vestibulum at eros</a></li>
-                    </ul>
-                  </div>
+				</div>	
             </div>
         </div>
     </div>
