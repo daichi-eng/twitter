@@ -1,29 +1,28 @@
 
 	<div class="card my-3">
-		<div class="card-header">ユーザー情報</div>
-
-		<!-- card-body Start -->
-		<div class="card-body container-fluid">
-			
-			<div class="form-group row">
-				<label for="name" class="col-md-4 col-form-label text-md-right">名前</label>
-
-				<div class="col-md-6 d-flex align-items-center">
-					<div class="mx-2"></div>
-				</div>
-			</div>
-
-			<div class="form-group row">
-				<label for="email" class="col-md-4 col-form-label text-md-right">メールアドレス</label>
-
-				<div class="col-md-6 d-flex align-items-center">
-					<div class="mx-2"></div>
-				</div>
-			</div>
-		</div><!-- card-body End -->
-			
+		<div class="card-header">
+			ユーザー情報
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">名前</li>
+			<li class="list-group-item">メールアドレス</li>
+		</ul>
 	</div><!-- card End -->
+	
+	<div class="card my-3">
+		<div class="card-header">
+			基本設定
+		</div>
 
+		<div class="card-body container-fluid">
+
+			<p class="card-text">
+				Twitterの各情報を登録して初期設定を行ってください。
+			</p>
+	
+			<a class="btn btn-success m-2 " href="https://restarted.site/">設定</a>
+		</div>
+	</div><!-- card End -->
 
 	<div class="card mb-3">
 		<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Developer Image</text></svg>
