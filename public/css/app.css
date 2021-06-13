@@ -1,146 +1,5 @@
-/*
---------------------------------------------
-reset.scss
---------------------------------------------
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*=====================================
-base style
-=======================================*/
-
-* {
-  line-height: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Nunito);/* Sticky footer styles
+-------------------------------------------------- */
 
 html {
   position: relative;
@@ -148,6 +7,7 @@ html {
 }
 
 body {
+  /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
 
@@ -155,9 +15,15 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #312d2a;
+  background-color: #f5f5f5;
 }
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+/* Not required for template or sticky footer method. */
 
 .container {
   width: auto;
@@ -167,168 +33,5 @@ body {
 
 .container .text-muted {
   margin: 20px 0;
-}
-
-/*=====================================
-header style
-=======================================*/
-
-#top-head {
-  width: 100%;
-  height: 60px;
-  background: #312d2a;
-  opacity: 0.9;
-  display: flex;
-  position: fixed;
-  z-index: 999;
-}
-
-#top-head .inner {
-  float: left;
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/*logo style*/
-
-.inner h1 a {
-  color: #f8f8f8;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/*nav style*/
-
-#top-head nav ul {
-  display: flex;
-  list-style-type: none;
-}
-
-/*nav link style*/
-
-#top-head nav ul li a {
-  text-decoration: none;
-  padding: 16px;
-  color: #f8f8f8;
-}
-
-#top-head nav ul li a:hover {
-  color: #55c4be;
-}
-
-#nav_toggle {
-  display: none;
-}
-
-img {
-  margin-top: 60px;
-  width: 100%;
-}
-
-/*============================
-mobile style
-============================*/
-
-@media screen and (max-width: 680px) {
-  /*hamburger menu style*/
-
-  #nav_toggle {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 4px;
-    z-index: 100;
-  }
-
-  #nav_toggle div {
-    position: relative;
-  }
-
-  /*hamburger menu close style*/
-
-  #nav_toggle span {
-    display: block;
-    height: 2px;
-    background: #404040;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    transition: 0.5s ease-in-out;
-  }
-
-  #nav_toggle span:nth-child(1) {
-    top: 0px;
-  }
-
-  #nav_toggle span:nth-child(2) {
-    top: 10px;
-  }
-
-  #nav_toggle span:nth-child(3) {
-    top: 20px;
-  }
-
-  /*hamburger menu open style*/
-
-  .open #nav_toggle span:nth-child(1) {
-    top: 10px;
-    transform: rotate(135deg);
-  }
-
-  .open #nav_toggle span:nth-child(2) {
-    width: 0;
-    left: 50%;
-  }
-
-  .open #nav_toggle span:nth-child(3) {
-    top: 10px;
-    transform: rotate(-135deg);
-  }
-
-  /*nav style*/
-
-  #top-head nav {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 1040px;
-    background: #fff;
-    z-index: 999;
-  }
-
-  #top-head nav ul {
-    display: block;
-    width: 80%;
-  }
-
-  #top-head nav ul li {
-    text-align: center;
-    border-bottom: 1px solid #dcdcdc;
-  }
-
-  #top-head nav ul li:last-child {
-    border: none;
-  }
-
-  /*nav link style*/
-
-  #top-head nav ul li a {
-    display: block;
-  }
-}
-
-/*=====================================
-main style
-=======================================*/
-
-main {
-  padding-top: 60px;
 }
 

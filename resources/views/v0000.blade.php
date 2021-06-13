@@ -11,8 +11,7 @@
 @section('content')
 
 {{-- メインコンテンツ --}}
-<main class="">
-    <div class="container-fluid my-2">
+    <div class="container-fluid my-3">
         <div class="row">
             <div class="col-sm-4">
                 <div class="card m-1">
@@ -20,7 +19,7 @@
                         基本設定
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><a href="" target="_blank">予約投稿</a></li>
+                      <li class="list-group-item"><a href="{{ route('setting.home') }}"" target="_blank">予約投稿</a></li>
                       <li class="list-group-item"><a href="" target="_blank">Dapibus ac facilisis in</a></li>
                       <li class="list-group-item"><a href="" target="_blank">Vestibulum at eros</a></li>
                     </ul>
@@ -49,9 +48,20 @@
                       <li class="list-group-item"><a href="" target="_blank">Vestibulum at eros</a></li>
                     </ul>
                   </div>
-            </div>
-        </div>
-    </div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card m-1">
+					<div class="card-header">
+						アナリティクス
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="" target="_blank">フォロワーの推移</a></li>
+						<li class="list-group-item"><a href="" target="_blank">インプレッション</a></li>
+						<li class="list-group-item"><a href="" target="_blank">メンション</a></li>
+					</ul>
+					</div>
+			</div>
+		</div>
+	</div>
 
-</main>
 @endsection

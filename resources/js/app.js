@@ -1,100 +1,32 @@
-//require('./bootstrap');
+/**
+ * First we will load all of this project's JavaScript dependencies which
+ * includes Vue and other libraries. It is a great starting point when
+ * building robust, powerful web applications using Vue and Laravel.
+ */
 
-/*
-----------------------------------------
-	header-nav.
-----------------------------------------
-*/
-$(function(){
-	//hamburger menu click
-	$('#nav_toggle').click(function(){
-	  $("#top-head").toggleClass('open');
-	  $("nav").slideToggle(500);
-	});
-	//menu link click
-	$('nav a').click(function(){
-	  if(window.innerWidth <= 680){
-		$("#top-head").toggleClass('open');
-		$("nav").slideToggle(500);
-	  }
-	});
-  });
-  
-/*
-----------------------------------------
-	main.
-----------------------------------------
-*/
-bootcards.init({
-	offCanvasBackdrop: false,
-	offCanvasHideOnMainClick: false,
-	enableTabletPortraitMode: false,
-	disableRubberBanding: false,
-	disableBreakoutSelector: 'a.no-break-out'
-  });
-  
-  var financeCharts = function() {
-	$("#financesChart").empty();
-	Morris.Bar({
-	  element: 'financesChart',
-	  data: [{
-		year: 2013,
-		sales: 1.1
-	  }, {
-		year: 2014,
-		sales: 0.9
-	  }, {
-		year: 2015,
-		sales: 1.3
-	  }, {
-		year: 2016,
-		sales: 0.7
-	  }],
-	  xkey: 'year',
-	  ykeys: ['sales'],
-	  labels: ['Sales (Mil. $)'],
-	  hideHover: 'auto'
-	});
-  }
-  
-  var growthCharts = function() {
-	$("#growthChart").empty();
-	Morris.Bar({
-	  element: 'growthChart',
-	  data: [{
-		year: 2013,
-		growth: 5
-	  }, {
-		year: 2014,
-		growth: 2
-	  }, {
-		year: 2015,
-		growth: 7
-	  }, {
-		year: 2016,
-		growth: 11
-	  }],
-	  xkey: 'year',
-	  ykeys: ['growth'],
-	  labels: ['Percentage (%)'],
-	  hideHover: 'auto'
-	});
-  }
-  
-  $(document).ready(function() {
-	financeCharts();
-	growthCharts();
-  });
-  $(window).on('resize', function() {
-	financeCharts();
-	growthCharts();
-  });
-  $(window).on('click', function() {
-	financeCharts();
-	growthCharts();
-  });
-  
-  function comp(nameid) {
-	$('.cards').addClass('hidden');
-	$(nameid).removeClass('hidden').addClass('visible');
-  }
+require('./bootstrap');
+
+window.Vue = require('vue');
+
+/**
+ * The following block of code may be used to automatically register your
+ * Vue components. It will recursively scan this directory for the Vue
+ * components and automatically register them with their "basename".
+ *
+ * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ */
+
+// const files = require.context('./', true, /\.vue$/i)
+// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+
+Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+/**
+ * Next, we will create a fresh Vue application instance and attach it to
+ * the page. Then, you may begin adding components to this application
+ * or customize the JavaScript scaffolding to fit your unique needs.
+ */
+
+const app = new Vue({
+    el: '#app',
+});
