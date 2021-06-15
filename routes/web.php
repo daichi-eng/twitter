@@ -2,9 +2,14 @@
 
 Auth::routes();
 
-// Route::get('/', function () {
-// 	return view('v0000');
-// });
+Route::get('/', function () {
+	return view('v0000');
+});
+
+//ログアウトのとき"/"に遷移させる。
+Route::get('/home', function () {
+	return redirect('/');
+});
 
 /* -------------------------------
 **  ログインユーザー認証
