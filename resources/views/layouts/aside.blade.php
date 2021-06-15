@@ -1,15 +1,18 @@
 
-	<div class="card my-3">
+	@if( Auth::check() )
+
+	<div class="card mb-3">
 		<div class="card-header">
 			ユーザー情報
 		</div>
 		<ul class="list-group list-group-flush">
-			<li class="list-group-item">名前</li>
-			<li class="list-group-item">メールアドレス</li>
+			<li class="list-group-item">名前：{{$user->name}}</li>
+			<li class="list-group-item">メールアドレス：{{$user->email}}</li>
+			<li class="list-group-item">更新日時：{{$user->update_at}}</li>
 		</ul>
 	</div><!-- card End -->
-	
-	<div class="card my-3">
+
+	<div class="card my-3">	
 		<div class="card-header">
 			基本設定
 		</div>
@@ -23,6 +26,19 @@
 			<a class="btn btn-success m-2 " href="{{ route('setting.index') }}">設定</a>
 		</div>
 	</div><!-- card End -->
+	@else
+	
+	<div class="card my-3">
+		<div class="card-body container-fluid">
+
+			<p class="card-text">
+				まずはユーザー登録してみてください。
+			</p>
+		</div>
+	</div><!-- card End -->
+
+	@endif
+	
 
 	<div class="card mb-3">
 		<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Developer Image</text></svg>

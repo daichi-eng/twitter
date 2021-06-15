@@ -11,7 +11,15 @@
 @section('content')
 
 {{-- メインコンテンツ --}}
-    <div class="container-fluid my-3">
+    <div class="container-fluid mb-2">
+		<div class="row mb-2">
+			<div class="col-sm-12">
+                <div class="card">
+					<div class="card-header">TOPページ</div>
+				</div>
+			</div>
+		</div>
+
         <div class="row">
             <div class="col-sm-4">
                 <div class="card mx-1 mb-3">

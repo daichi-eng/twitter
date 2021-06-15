@@ -1,14 +1,22 @@
 @extends('layouts.app')
 
 @section('title')
-  基本設定
+  Twitter情報の基本設定
 @endsection
 
 @section('content')
 
 {{-- メインコンテンツ --}}
 <main class="">
-    <div class="container-fluid my-2">
+    <div class="container-fluid mb-2">
+		<div class="row mb-2">
+			<div class="col-sm-12">
+                <div class="card">
+					<div class="card-header">基本設定</div>
+				</div>
+			</div>
+		</div>
+
         <div class="row">
             <div class="col-sm-4">
                 <div class="card m-1">

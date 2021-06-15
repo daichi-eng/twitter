@@ -11,13 +11,14 @@
 		{{--  Start container-fluid  --}}
 		<div class="container-fluid">
 			<div class="row">
+				
 				{{-- Start main --}}
-				<main class="col-lg-9 col-md-9 col-sm-12 col-xs-12 mb-3">
+				<main class="col-lg-9 col-md-9 col-sm-12 col-xs-12 my-3">
 					@yield('content')
 				</main>
 
 				{{-- Start aside --}}
-				<aside class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-3">
+				<aside class="col-lg-3 col-md-3 col-sm-12 col-xs-12 my-3">
 					@include('layouts.aside')
 				</aside>
 			</div>
