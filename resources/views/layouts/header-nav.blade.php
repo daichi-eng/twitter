@@ -32,7 +32,14 @@
 						@if (Route::has('login'))
 							@auth
 								<a class="dropdown-item" href="{{ url('/') }}">ホーム</a>
-								<a class="dropdown-item" href="{{ route('login') }}">ログアウト</a>
+								<a class="dropdown-item" href="{{ route('logout') }}"
+									onclick="event.preventDefault();
+									document.getElementById('logout-form').submit();">
+									ログアウト
+								</a>
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+									@csrf
+								</form>
 							@else
 								<a class="dropdown-item" href="{{ route('login') }}">ログイン</a>
 		
