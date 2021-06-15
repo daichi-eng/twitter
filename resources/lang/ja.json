@@ -1,0 +1,12 @@
+{
+	"login": "ログイン",
+	"Login": "ログイン",
+	"logout": "ログアウト",
+	"Logout": "ログアウト",
+	"regster": "登録",
+	"Regster": "登録",
+	"E-Mail": "メールアドレス",
+	"Password": "パスワード",
+	"Remember Me": "ユーザーIDを記憶する。",
+	"Forgot Your Password?":"パスワード忘れましたか？"
+}
