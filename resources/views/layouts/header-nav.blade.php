@@ -28,9 +28,9 @@
 					</button>
 					<!-- ドロップメニューの設定 -->
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">ユーザー情報</a>
 						@if (Route::has('login'))
 							@auth
+								<a class="dropdown-item" href="#">ユーザー情報</a>
 								<a class="dropdown-item" href="{{ url('/') }}">ホーム</a>
 								<a class="dropdown-item" href="{{ route('logout') }}"
 									onclick="event.preventDefault();
@@ -47,10 +47,12 @@
 									<a class="dropdown-item" href="{{ route('register') }}">ユーザー登録</a>
 								@endif
 							@endauth
+							@auth
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Twitter情報</a>
+							@endauth
 						
 						@endif
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Twitter情報</a>
 					</div><!-- /.dropdown-menu -->
 			</div><!-- /.dropdown -->
 		</div>
