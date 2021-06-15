@@ -12,7 +12,7 @@
 		</ul>
 	</div><!-- card End -->
 
-	<div class="card my-3">	
+	<div class="card mb-3">	
 		<div class="card-header">
 			基本設定
 		</div>
@@ -28,7 +28,7 @@
 	</div><!-- card End -->
 	@else
 	
-	<div class="card my-3">
+	<div class="card mb-3">
 		<div class="card-body container-fluid">
 
 			<p class="card-text">
